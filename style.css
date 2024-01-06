@@ -1,0 +1,188 @@
+*{
+    /* border: 1px solid red; */
+}
+
+body {
+    padding: 0;
+    margin: 0 0 200px;
+    text-align: center;
+    background-image: url(images/background5.jpeg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Indie Flower', cursive;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: #fff;
+    text-align: center;
+}
+
+.player-section {
+    margin: auto;
+    margin-bottom: 0;
+}
+
+header img {
+    height: 80px;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 20px 0 0;
+    color: rgb(14, 14, 100);
+}
+
+.header-player1, .header-player2 {
+    color: #fff;
+    display: inline;
+    margin: 0;
+    padding: 0 8px 1px;
+    font-size: 18px;
+}
+
+.message {
+    margin: 5px;
+    height: 20px;
+    color: rgb(14, 14, 100);
+    font-size: 18px;
+}
+
+.giphy-player1, .giphy-player2 {
+    height: 150px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.winner-giphy {
+    background-image: url('images/bluey-giphy.gif');
+    /* width: 80%; */
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 650px;
+    margin: 20px auto 10px;
+}
+
+.cards {
+    width: 90px;
+    height: 120px;
+    margin: 5px auto;
+    background-color: #fff;
+    border: 3px solid rgb(249, 191, 82);
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px darkgray;
+}
+
+.bluey {
+    background-image: url('images/Bluey.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: rgb(247, 155, 173);
+}
+
+.checkBluey{
+
+}
+
+.bingo {
+    background-image: url('images/Bingo.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: rgb(191, 191, 234);
+}
+
+.checkBingo {
+
+}
+
+.mum {
+    background-image: url('images/Chilli.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-color: rgb(241, 241, 116);
+}
+
+.checkMum{
+
+}
+
+.dad {
+    background-image: url('images/dad.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-color: rgb(153, 243, 153);
+}
+
+.checkDad{
+
+}
+
+.muffin {
+    background-image: url('images/muffin.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: rgb(113, 187, 233);
+}
+
+.checkMuffin{
+
+}
+
+.socks {
+    background-image: url('images/socks.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: rgb(243, 205, 218);
+}
+
+.checkSocks{
+
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.cardCover {
+    background-image: url(images/bluey-logo-no-background.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: #fff;
+}
+
+.openedCard {
+
+}
+
+.reset-btn{
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    background-color: #94bfe6;
+    padding: 2px 25px;
+    font-size: 15px;
+    margin: 20px 0 40px;
+    box-shadow: 4px 4px 5px darkgray;
+    font-family: 'Indie Flower', cursive;
+}
+
+.playerTurn {
+    border-bottom: 3px solid #fff;
+}
+
