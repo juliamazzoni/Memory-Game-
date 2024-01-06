@@ -261,117 +261,87 @@ function checkingPairs() {
         playerTurn === 2 ||
         matchingBluey === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `Pawsome match, ${currentPlayer}! Bluey would be proud!`;
             matchingBluey = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){    
                 openedCard.classList.remove(bluey.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-            }else{
-                messageElem.textContent = `Pawsome match, ${currentPlayer}! Bluey would be proud!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
-            
     }else if(matchingBingo === 2 &&
         playerTurn === 2 ||
         matchingBingo === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `Woof-tastic, ${currentPlayer}! You're a memory star, just like Bingo!`;
             matchingBingo = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){
                 openedCard.classList.remove(bingo.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-            }else{
-                messageElem.textContent = `Woof-tastic, ${currentPlayer}! You're a memory star, just like Bingo!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
-
     }else if(matchingMum === 2 &&
         playerTurn === 2 ||
         matchingMum === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `Super sniffing skills, ${currentPlayer}! Just like the Heelers!`;
             matchingMum = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){
                 openedCard.classList.remove(mum.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-            }else {
-                messageElem.textContent = `Super sniffing skills, ${currentPlayer}! Just like the Heelers!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
     }else if(matchingDad === 2 &&
         playerTurn === 2 ||
         matchingDad === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `Amazing match, ${currentPlayer}! You're playing just like Bandit!`;
             matchingDad = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){
                 openedCard.classList.remove(dad.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-            }else{
-                messageElem.textContent = `Amazing match, ${currentPlayer}! You're playing just like Bandit!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
-        }else if(matchingMuffin === 2 &&
+    }else if(matchingMuffin === 2 &&
         playerTurn === 2 ||
         matchingMuffin === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `High five, ${currentPlayer}! You've got the memory of a Heeler!`;
             matchingMuffin = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){
                 openedCard.classList.remove(muffin.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-        
-            }else{
-                messageElem.textContent = `High five, ${currentPlayer}! You've got the memory of a Heeler!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
-        }else if(matchingSocks === 2 &&
+    }else if(matchingSocks === 2 &&
         playerTurn === 2 ||
         matchingSocks === 2 &&
         playerTurn === 4){
+            messageElem.textContent = `You've got the memory of a champion, ${currentPlayer}! Bluey would agree!`;
             matchingSocks = 0;
             addingPoints();
+            setTimeout(emptyWinnerMessage, 3000);
             for (let openedCard of openedCards){
                 openedCard.classList.remove(socks.class);
                 openedCard.classList.remove('openedCard');
                 openedCard.classList.add('invisible');
-            }if(cardsElem.length === invisibleCards.length){
-                setTimeout(gameWinnerMessage, 1800);
-            }else{
-                messageElem.textContent = `You've got the memory of a champion, ${currentPlayer}! Bluey would agree!`;
-                setTimeout(emptyWinnerMessage, 4000);
             }
+    }else if(cardsElem.length === invisibleCards.length){
+        setTimeout(gameWinnerMessage, 3000);
     }
 }
 
 // function findingMatchingCards(matchingChar, character){
-//     matchingChar = 0;
-//         addingPoints();
-//         for (let openedCard of openedCards){
-//             openedCard.classList.remove(character.class);
-//             openedCard.classList.remove('openedCard');
-//             openedCard.classList.add('invisible');
-//             }if(cardsElem.length === invisibleCards.length){
-//                 setTimeout(gameWinnerMessage, 1800);
-//             }else{
-//                 messageElem.textContent = `You've got the memory of a champion, ${currentPlayer}! Bluey would agree!`;
-//                 setTimeout(emptyWinnerMessage, 6000);
-//             }
+//  
 // }
 
 function settingCurrentPlayer(){
